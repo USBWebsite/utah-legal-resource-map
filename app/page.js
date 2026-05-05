@@ -15,8 +15,17 @@ function displayName(id) {
 
 export default function Page() {
   const [county, setCounty] = useState("Kane");
+  const [svg, setSvg] = useState("");
 
   useEffect(() => {
+    fetch("/utah-map.svg")
+      .then((res) => res.text())
+      .then((text) => setSvg(text));
+  }, []);
+
+  useEffect(() => {
+    if (!svg) return;
+
     countyIds.forEach((id) => {
       const el = document.getElementById(id);
       if (!el) return;
@@ -27,7 +36,7 @@ export default function Page() {
         setCounty(displayName(id));
       };
     });
-  }, []);
+  }, [svg]);
 
   return (
     <main style={{ fontFamily: "Arial, sans-serif", padding: 24 }}>
@@ -35,13 +44,11 @@ export default function Page() {
       <p>Click a county to find free and low-cost legal help.</p>
 
       <div style={{ display: "flex", gap: 32, alignItems: "flex-start", flexWrap: "wrap" }}>
-        <img
-  src="/utah-map.svg"
-  style={{
-    width: 520,
-    maxWidth: "100%",
-  }}
-/>
+        <div
+          style={{ width: 520, maxWidth: "100%" }}
+          dangerouslySetInnerHTML={{ __html: svg }}
+        />
+
         <section style={{ maxWidth: 520, border: "1px solid #ddd", padding: 20, borderRadius: 12 }}>
           <h2>{county} County Legal Help</h2>
 
