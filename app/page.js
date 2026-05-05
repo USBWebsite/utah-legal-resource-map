@@ -14,7 +14,7 @@ const BRAND = {
 
 // Utah county GeoJSON source from Plotly public datasets.
 // If this URL ever changes, download the file and host it with your app.
-const geoUrl = "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json";
+const geoUrl = "/counties.json";
 
 const UTAH_STATE_FIPS = "49";
 
