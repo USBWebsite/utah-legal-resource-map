@@ -102,31 +102,27 @@ export default function Page() {
 
           <h3>Statewide Utah resources</h3>
 <ul>
-            <li>
-  <strong>Utah Legal Help:</strong>{" "}
+  <li>
   <a href="https://www.utahlegalhelp.org" target="_blank">
-    Visit site
+    <strong>Utah Legal Help</strong>
   </a>
 </li>
 <li>
-  <strong>Free Virtual Legal Clinic:</strong>{" "}
   <a href="https://www.utahlegalhelp.org/vlc.html" target="_blank">
-    Sign up here
+    <strong>Free Virtual Legal Clinic</strong>
   </a>
 </li>
 <li>
-  <strong>And Justice for All:</strong>{" "}
   <a href="https://andjusticeforall.org" target="_blank">
-    Visit site
+    <strong>And Justice for All</strong>
   </a>
 </li>
 <li>
-  <strong>Utah State Bar Access to Justice:</strong>{" "}
   <a href="https://www.utahbar.org" target="_blank">
-    Visit site
+    <strong>Utah State Bar Access to Justice</strong>
   </a>
 </li>
-          </ul>
+</ul>
         </section>
       </div>
     </main>
