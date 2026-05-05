@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Utah Legal Resource Finder",
-  description: "Find legal help in Utah by county.",
+  description: "Find local, regional and statewide legal resources in Utah.",
 };
 
 export default function RootLayout({ children }) {
