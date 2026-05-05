@@ -35,16 +35,13 @@ export default function Page() {
       <p>Click a county to find free and low-cost legal help.</p>
 
       <div style={{ display: "flex", gap: 32, alignItems: "flex-start", flexWrap: "wrap" }}>
-        <iframe
+        <img
   src="/utah-map.svg"
   style={{
     width: 520,
     maxWidth: "100%",
-    height: 620,
-    border: "none",
   }}
 />
-
         <section style={{ maxWidth: 520, border: "1px solid #ddd", padding: 20, borderRadius: 12 }}>
           <h2>{county} County Legal Help</h2>
 
