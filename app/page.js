@@ -12,6 +12,7 @@ const countyIds = [
 function displayName(id) {
   return id
     .replaceAll("_x5F_", " ")
+    .replaceAll("_x5F", "")
     .replaceAll("_", " ");
 }
 
