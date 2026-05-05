@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 
 const countyIds = [
-  "Box_Elder", "Cache", "Rich", "Weber", "Morgan", "Davis", "Salt_Lake",
+  "Box_x5F_Elder", "Cache", "Rich", "Weber", "Morgan", "Davis", "Salt_Lake",
   "Tooele", "Summit", "Daggett", "Utah", "Wasatch", "Duchesne", "Uintah",
   "Juab", "Carbon", "Millard", "Sanpete", "Emery", "Grand", "Sevier",
-  "Beaver", "Piute", "Wayne", "Iron", "Garfield", "San_Juan", "Washington", "Kane"
+  "Beaver", "Piute", "Wayne", "Iron", "Garfield", "San_x5F_Juan", "Washington", "Kane"
 ];
 
 function displayName(id) {
