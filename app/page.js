@@ -60,8 +60,8 @@ export default function Page() {
                 color: county === name ? "white" : "transparent",
                 border: "none",
                 borderRadius: 999,
-                width: 26,
-                height: 26,
+                width: 44,
+                height: 44,
                 cursor: "pointer",
               }}
             >
